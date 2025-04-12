@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | FoodShare</title>
+    <script src="/scripts/script.js" defer></script>
+    <script src="/scripts/foodlistings.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/"><img src="assets/logo.jpeg" alt="FoodShare Logo"></a> 
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/foodlistings.html">Food Listings</a></li>
+                <li><a href="/about.html">About Us</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="login.html" class="join-btn-2">Sign Up/Log In</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="text-content">
+        <h1>HELP FEED THOSE IN NEED</h1>
+        <p>Your donation can make a difference- Join us in fighting hunger today.</p>
+
+        <h2>Available Food Donations</h2>
+
+        <div class="food-grid">
+            <div class="food-card">
+                <a href="#">
+                    <img src="assets/broccoli.jpeg" alt="Food Item #1">
+                </a>
+                <p><strong>Broccolli</strong><br>Quantity: 32</p>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="text-content">
+        <h1>FOR DONATING</h1>
+        <p>Donate your surplus food by listing them here.</p>
+
+        <a id="donate-btn" class="join-btn-2">Donate Food</a>
+
+        <div id="donation-form-container" class="form-popup hidden">
+            <form class="donation-form">
+                <label for="food">Food type:</label>
+                <select name="food" id="food">
+                    <option value="" disabled selected>Select an item</option>
+                    <option value="Fresh Apples">Fresh Apples</option>
+                    <option value="Avocado">Avocado</option>
+                    <option value="Bananas">Bananas</option>
+                    <option value="Bread">Bread</option>
+                    <option value="Broccoli">Broccoli</option>
+                    <option value="Jam Jars">Jam Jars</option>
+                    <option value="Fresh Mangoes">Fresh Mangoes</option>
+                    <option value="Fresh Oranges">Fresh Oranges</option>
+                    <option value="Pizza Slices">Pizza Slices</option>
+                    <option value="Raw Chicken">Raw Chicken</option>
+                    <option value="Raw Rice">Raw Rice</option>
+                    <option value="Fresh Strawberries">Fresh Strawberries</option>
+                    <option value="Sweet Potatoes">Sweet Potatoes</option>
+                    <option value="Tofu">Tofu</option>
+                    <option value="Tomatoes">Tomatoes</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input id="quantity" type="number">
+
+                <button id="donation-submit" class="submit">Submit</button>
+            </form>
+        </div>
+
+    </section>
+   
+    
+</body>
+</html>

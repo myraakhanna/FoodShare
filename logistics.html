@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Logistics| FoodShare</title>
+    <script src="/scripts/script.js" defer></script>
+    <script src="/scripts/logistics.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+               <a href="/"><img src="assets/logo.jpeg" alt="FoodShare Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/foodlistings.html">Food Listings</a></li>
+                <li><a href="/about.html">About Us</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="login.html" class="join-btn-2">Sign Up/Log In</a>
+            </div>
+        </nav>
+    </header>
+    <main class="text-content center">
+    <h1>SCHEDULE PICKUP</h1>
+    <p>Please input the details mentioned below for the order of <span id="food-name"></span> of quantity <span id="food-quantity"></span>.</p>
+    <div class="logistics-container">
+        <div class="map-box">
+            <iframe
+                  id="map-frame"
+                  src="https://maps.google.com/maps?q=Gurugram&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  allowfullscreen
+                ></iframe>
+             </div>
+            <div class="pickup-form">
+                <label for="pickup">Pickup:</label>
+                <input type="text" id="pickup" readonly>
+
+                <label for="delivery">Delivery:</label>
+                <input type="text" id="delivery" placeholder="Enter Delivery Address">
+
+                <label for="duration">Time Duration:</label>
+                <input type="text" id="duration" placeholder="Enter Conveninent Time for Delivery">
+
+                <a class="join-btn">Submit</a>
+            </div>
+            </div>
+    </main>
+    <div class="confirmation-popup" id="confirmationPopup">
+        <div class="popup-content text-content center">
+            <img src="assets/confirmation.jpg" alt="Confirmation Image">
+            <h2>Order Accepted!</h2>
+            <p id="orderInfo"></p>
+            <p>Your order will be delivered within scheduled time.</p>
+            <a href="index.html" class="join-btn-2">Return to Home</a>
+        </div>
+    </div>
+
+
+</body>
+</html>
